@@ -7,9 +7,9 @@ export function activate(context: vscode.ExtensionContext) {
 	const disposable = vscode.commands.registerCommand('atlas-contributor.orderArticles', () => {
 
 		const articlesName = utils.getThisDiretoryArticlesName();
-		console.log("extension.js\n", articlesName);
 		if (articlesName) {
-			vscode.window.showQuickPick(["a", "b"]);
+			console.log(articlesName);
+			console.log(articlesName.length);
 		}
 	});
 
